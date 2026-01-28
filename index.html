@@ -1,15 +1,124 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VerdiChem</title>
+  <meta name="description" content="VerdiChem develops sustainable chemistry for high-performance materials." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body style="font-family: Arial; max-width: 900px; margin: 40px auto; padding: 0 16px;">
-  <h1>VerdiChem</h1>
-  <p>Sustainable chemistry for high-performance materials.</p>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">VerdiChem</div>
+        <div class="tagline">Sustainable chemistry for high-performance materials.</div>
+      </div>
 
-  <h2>Contact</h2>
-  <p><a href="mailto:info@verdichem.com">info@verdichem.com</a></p>
+      <nav class="nav">
+        <a href="#technology">Technology</a>
+        <a href="#applications">Applications</a>
+        <a href="#about">About</a>
+        <a class="button" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Greener building blocks.<br/>Serious performance.</h1>
+        <p class="lead">
+          VerdiChem develops bio-based chemical intermediates designed for demanding applications in materials and consumer products.
+        </p>
+        <div class="cta">
+          <a class="button" href="#contact">Get in touch</a>
+          <a class="link" href="#technology">Learn more →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="technology" class="section">
+      <div class="container">
+        <h2>Technology</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Bio-based feedstocks</h3>
+            <p>Designed to reduce reliance on petrochemicals and lower lifecycle emissions.</p>
+          </div>
+          <div class="card">
+            <h3>Application-led development</h3>
+            <p>We prioritise performance targets that matter to formulators and manufacturers.</p>
+          </div>
+          <div class="card">
+            <h3>Scale-minded process design</h3>
+            <p>Routes and conditions selected for scalability, robustness, and cost-down over time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="applications" class="section alt">
+      <div class="container">
+        <h2>Applications</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Polymers & materials</h3>
+            <p>Monomers and intermediates for durable, high-performance polymer systems.</p>
+          </div>
+          <div class="card">
+            <h3>Cosmetics & personal care</h3>
+            <p>Ingredients designed for safety, compliance, and consistent sensory performance.</p>
+          </div>
+          <div class="card">
+            <h3>Coatings & specialty chemicals</h3>
+            <p>Functional building blocks for advanced formulations and niche performance needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="split">
+          <div>
+            <p>
+              VerdiChem is building a portfolio of sustainable chemical building blocks to help partners
+              hit performance and sustainability targets without compromise.
+            </p>
+            <ul class="bullets">
+              <li>UK-based (edit this as needed)</li>
+              <li>Partnering with R&D and product teams</li>
+              <li>Open to pilots, evaluation projects, and supply discussions</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>What we’re looking for</h3>
+            <p><strong>Industry partners</strong> who want to evaluate bio-based alternatives in real formulations.</p>
+            <p><strong>Investors</strong> aligned with sustainable chemicals and scale-up.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:info@verdichem.com">info@verdichem.com</a></p>
+        <p class="small">Add LinkedIn / address later if you want.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> VerdiChem</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
