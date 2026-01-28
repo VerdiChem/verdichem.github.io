@@ -1,10 +1,15 @@
 :root{
-  --bg: #ffffff;
-  --text: #111;
-  --muted: #555;
-  --border: #e7e7e7;
-  --card: #fafafa;
-  --alt: #f6f6f6;
+  --bg: #000837;          /* background of whole site */
+  --text: #DCEAF7;        /* main text */
+  --muted: #B8CBE0;       /* slightly dimmer text */
+
+  --brand: #DCEAF7;       /* button/link color (can change later) */
+  --brand-2: #ffffff;     /* hover */
+
+  --border: rgba(220, 234, 247, 0.18);
+  --card: rgba(255, 255, 255, 0.06);
+  --alt: rgba(255, 255, 255, 0.03);
+
   --radius: 14px;
   --max: 1100px;
 }
@@ -27,7 +32,7 @@ body{
 .site-header{
   position: sticky;
   top: 0;
-  background: rgba(255,255,255,0.9);
+  background: rgba(0, 8, 55, 0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
   z-index: 10;
@@ -92,12 +97,14 @@ h3{ margin: 0 0 8px; font-size: 1.1rem; }
   display: inline-block;
   border: 1px solid var(--border);
   background: var(--text);
-  color: white !important;
+  color: #000837 !important;
   text-decoration: none;
-  padding: 10px 12px;
+  padding: 10px 14px;
   border-radius: 12px;
 }
-.button:hover{ opacity: 0.92; }
+.button:hover{
+  background: #ffffff;
+}
 
 .link{ color: var(--text); text-decoration: none; padding: 10px 6px; }
 .link:hover{ text-decoration: underline; }
@@ -117,4 +124,10 @@ h3{ margin: 0 0 8px; font-size: 1.1rem; }
   height: 32px;
   width: auto;
   display: block;
+}
+a{
+  color: var(--text);
+}
+a:hover{
+  color: var(--brand-2);
 }
