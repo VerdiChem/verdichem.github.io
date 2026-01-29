@@ -120,6 +120,28 @@ h3{ margin: 0 0 8px; font-size: 1.1rem; }
   color: var(--muted);
 }
 
+/* Logo + tagline inline (desktop default) */
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 14px;              /* space between logo and text */
+}
+
+.logo-img{
+  height: 52px;           /* desktop logo size */
+  width: auto;
+  display: block;
+}
+
+/* Links */
+a{
+  color: var(--text);
+}
+a:hover{
+  color: var(--brand-2);
+}
+
+/* Mobile tweaks */
 @media (max-width: 820px){
   .brand{
     gap: 10px;
@@ -128,24 +150,7 @@ h3{ margin: 0 0 8px; font-size: 1.1rem; }
     height: 42px;
   }
   .tagline{
-    display: block;       /* keep visible on mobile */
+    display: block;
     font-size: 0.95rem;
   }
 }
-.logo-img{
-  height: 52px;           /* make logo bigger */
-  width: auto;
-  display: block;
-}
-a{
-  color: var(--text);
-}
-a:hover{
-  color: var(--brand-2);
-}
-.brand{
-  display: flex;
-  align-items: center;
-  gap: 14px;              /* space between logo and text */
-}
-
