@@ -32,9 +32,9 @@ body{
 .site-header{
   position: sticky;
   top: 0;
-  background: rgba(0, 8, 55, 0.85);
+  background: rgba(220, 234, 247, 0.92);   /* white-ish */
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(0, 8, 55, 0.15);
   z-index: 10;
 }
 
@@ -49,19 +49,21 @@ body{
 .logo{ font-weight: 700; font-size: 1.05rem; letter-spacing: 0.2px; }
 .tagline{
   font-size: 1.05rem;
-  color: var(--muted);
+  color: rgba(0, 8, 55, 0.75);   /* muted navy */
   line-height: 1.2;
-  max-width: 520px;       /* prevents it stretching too wide */
+  max-width: 520px;
 }
 
-.nav{ display: flex; gap: 14px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
 .nav a{
   text-decoration: none;
-  color: var(--text);
+  color: #000837;          /* navy */
   padding: 8px 10px;
   border-radius: 10px;
 }
-.nav a:hover{ background: var(--alt); }
+
+.nav a:hover{
+  background: rgba(0, 8, 55, 0.08);
+}
 
 .hero{ padding: 72px 0 36px; }
 h1{
@@ -100,15 +102,16 @@ h3{ margin: 0 0 8px; font-size: 1.1rem; }
 
 .button{
   display: inline-block;
-  border: 1px solid var(--border);
-  background: var(--text);
-  color: #000837 !important;
+  border: 1px solid rgba(0, 8, 55, 0.18);
+  background: #000837;           /* navy */
+  color: #DCEAF7 !important;     /* light text */
   text-decoration: none;
   padding: 10px 14px;
   border-radius: 12px;
 }
+
 .button:hover{
-  background: #ffffff;
+  background: #06106a;
 }
 
 .link{ color: var(--text); text-decoration: none; padding: 10px 6px; }
