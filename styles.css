@@ -131,7 +131,7 @@ h3{ margin: 0 0 8px; font-size: 1.1rem; }
     display: block;       /* keep visible on mobile */
     font-size: 0.95rem;
   }
-
+}
 .logo-img{
   height: 52px;           /* make logo bigger */
   width: auto;
