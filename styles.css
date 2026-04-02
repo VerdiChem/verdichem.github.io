@@ -8,7 +8,7 @@
 
   --border: rgba(220, 234, 247, 0.18);
   --card: rgba(255, 255, 255, 0.06);
-  --alt: rgba(180, 229, 162, 0.04);
+  --alt: transparent;
 
   --radius: 14px;
   --max: 1100px;
@@ -72,7 +72,12 @@ body{
 .hero{
   padding: 56px 0 24px;
 }
-
+.section.alt{
+  background: transparent;
+}
+.section{
+  padding: 72px 0;
+}
 h1{
   margin: 0 0 12px;
   font-size: clamp(2rem, 3.4vw, 3rem);
@@ -84,14 +89,6 @@ h1{
   font-size: 1.1rem;
   color: var(--muted);
   max-width: 70ch;
-}
-
-.section{
-  padding: 70px 0;
-}
-
-.section.alt{
-  background: #050f4d;
 }
 
 h2{
