@@ -101,7 +101,9 @@ h3{
   font-size: 1.1rem;
   font-weight: 600;
 }
-
+#contact{
+  scroll-margin-top: 80px;
+}
 #tech h2,
 #team h2,
 #news h2,
