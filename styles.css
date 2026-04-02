@@ -8,7 +8,7 @@
 
   --border: rgba(220, 234, 247, 0.18);
   --card: rgba(255, 255, 255, 0.06);
-  --alt: rgba(255, 255, 255, 0.03);
+  --alt: rgba(180, 229, 162, 0.04);
 
   --radius: 14px;
   --max: 1100px;
@@ -87,12 +87,15 @@ h1{
 }
 
 .section{
-  padding: 54px 0;
-  border-top: 1px solid var(--border);
+  padding: 70px 0;
 }
 
 .section.alt{
-  background: var(--alt);
+  background: linear-gradient(
+    180deg,
+    rgba(180, 229, 162, 0.05),
+    rgba(180, 229, 162, 0.02)
+  );
 }
 
 h2{
