@@ -32,18 +32,17 @@ body{
 .site-header{
   position: sticky;
   top: 0;
-  background: rgba(220, 234, 247, 0.92);   /* white-ish */
-  backdrop-filter: blur(10px);
+  background: rgba(220, 234, 247, 0.95);   /* white-ish */
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(0, 8, 55, 0.15);
   z-index: 10;
 }
 
 .site-header .container{
   display: flex;
-  gap: 16px;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 0;
+  padding: 10px 0;   /* thinner */
 }
 
 .logo{ font-weight: 700; font-size: 1.05rem; letter-spacing: 0.2px; }
@@ -127,11 +126,10 @@ h3{ margin: 0 0 8px; font-size: 1.1rem; }
 .brand{
   display: flex;
   align-items: center;
-  gap: 14px;              /* space between logo and text */
 }
 
 .logo-img{
-  height: 52px;           /* desktop logo size */
+  height: 40px;           /* desktop logo size */
   width: auto;
   display: block;
 }
