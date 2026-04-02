@@ -154,4 +154,12 @@ a:hover{
     display: block;
     font-size: 0.95rem;
   }
+  #tech h2,
+  #team h2,
+  #news h2,
+  #contact h2{
+    color: #B4E5A2;
+  }
+}
+
 }
