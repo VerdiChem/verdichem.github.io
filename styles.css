@@ -70,7 +70,7 @@ body{
 }
 
 .hero{
-  padding: 72px 0 36px;
+  padding: 56px 0 24px;
 }
 
 h1{
@@ -91,11 +91,7 @@ h1{
 }
 
 .section.alt{
-  background: linear-gradient(
-    180deg,
-    rgba(180, 229, 162, 0.05),
-    rgba(180, 229, 162, 0.02)
-  );
+  background: #050f4d;
 }
 
 h2{
@@ -268,6 +264,9 @@ a:hover{
   .contact-logo-wrap{
     justify-content: flex-start;
   }
+  #tech{
+  padding-top: 40px;   /* pulls it closer to hero */
+}
 
   .contact-logo{
     max-width: 200px;
